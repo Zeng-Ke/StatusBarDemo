@@ -1,8 +1,11 @@
-package com.zk.statusbar.statusbardemo;
+package com.zk.statusbar.statusbardemo.activity;
 
 import android.graphics.Color;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
+
+import com.zk.statusbar.statusbardemo.utils.BarUtil;
+import com.zk.statusbar.statusbardemo.R;
 
 /**
  * author: ZK.
@@ -15,9 +18,8 @@ public class ColorTranslucentBarActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_color_bar);
-        BarUtil.setStatusBar(this, Color.MAGENTA, 120);
+        BarUtil.setStatusBar(this, Color.parseColor("#43d95d"), 120,false);
 
     }
-
 
 }

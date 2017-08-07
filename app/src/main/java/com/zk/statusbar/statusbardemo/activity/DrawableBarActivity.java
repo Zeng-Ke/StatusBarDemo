@@ -1,7 +1,10 @@
-package com.zk.statusbar.statusbardemo;
+package com.zk.statusbar.statusbardemo.activity;
 
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
+
+import com.zk.statusbar.statusbardemo.utils.BarUtil;
+import com.zk.statusbar.statusbardemo.R;
 
 /**
  * author: ZK.
@@ -13,7 +16,8 @@ public class DrawableBarActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_color_bar);
-        BarUtil.setStatusBar(this, R.mipmap.ic_launcher);
+
+        BarUtil.setStatusBar(this,R.drawable.shape_status_bg,false); //当根部局添加了fifSystemWindow = true时，第三个参数为true，否则为false。
     }
 
 

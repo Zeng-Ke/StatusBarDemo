@@ -1,8 +1,11 @@
-package com.zk.statusbar.statusbardemo;
+package com.zk.statusbar.statusbardemo.activity;
 
-import android.graphics.Color;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
+
+import com.zk.statusbar.statusbardemo.utils.BarUtil;
+import com.zk.statusbar.statusbardemo.R;
+import com.zk.statusbar.statusbardemo.utils.ScrollActivityUtil;
 
 /**
  * author: ZK.
@@ -16,7 +19,8 @@ public class TransparentBarActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_transparent);
-        BarUtil.setStatusBar(this, Color.TRANSPARENT,0);
+        BarUtil.setStatusBarTransparency(this);
+        ScrollActivityUtil.scrollActivity(this);
     }
 
 

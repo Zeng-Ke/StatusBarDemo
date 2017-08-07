@@ -6,7 +6,8 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context="com.zk.statusbar.statusbardemo.MainActivity">
+    android:fitsSystemWindows="true"
+    tools:context="com.zk.statusbar.statusbardemo.activity.MainActivity">
 
     <TextView
         android:layout_width="match_parent"
@@ -16,14 +17,72 @@
         android:textColor="#000000"
         android:textSize="24dp"/>
 
-    <TextView
+
+    <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="0dp"
-        android:layout_weight="1"
+        android:layout_height="match_parent"
         android:background="@color/colorAccent"
         android:gravity="center"
-        android:text="内容"
-        android:textColor="#000000"
-        android:textSize="24dp"/>
+        android:orientation="vertical"
+        android:textColor="#000000">
+
+        <Button
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:gravity="center"
+            android:onClick="color_click"
+            android:padding="10dp"
+            android:text="自定义着色状态栏"
+            android:textColor="#000000"
+            android:textSize="20dp"/>
+
+        <Button
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:gravity="center"
+            android:onClick="tranclucent_click"
+            android:padding="10dp"
+            android:text="半透明状态栏"
+            android:textColor="#000000"
+            android:textSize="20dp"/>
+
+        <Button
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:gravity="center"
+            android:padding="10dp"
+            android:onClick="drawable_click"
+            android:text="图片式状态栏"
+            android:textColor="#000000"
+            android:textSize="20dp"/>
+
+        <Button
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:gravity="center"
+            android:onClick="transparency_click"
+            android:padding="10dp"
+            android:text="透明状态栏"
+            android:textColor="#000000"
+            android:textSize="20dp"/>
+
+        <Button
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:gravity="center"
+            android:onClick="hide_click"
+            android:padding="10dp"
+            android:text="隐藏状态栏"
+            android:textColor="#000000"
+            android:textSize="20dp"/>
+
+
+    </LinearLayout>
+
 
 </LinearLayout>
