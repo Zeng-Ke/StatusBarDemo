@@ -1,4 +1,4 @@
-package com.zk.statusbar.statusbardemo.utils;
+package com.zk.statusbar.bartool;
 
 import android.app.Activity;
 import android.graphics.Rect;

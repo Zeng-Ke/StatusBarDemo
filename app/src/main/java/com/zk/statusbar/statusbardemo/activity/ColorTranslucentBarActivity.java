@@ -4,7 +4,7 @@ import android.graphics.Color;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 
-import com.zk.statusbar.statusbardemo.utils.BarUtil;
+import com.zk.statusbar.bartool.BarUtil;
 import com.zk.statusbar.statusbardemo.R;
 
 /**

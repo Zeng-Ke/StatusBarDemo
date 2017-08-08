@@ -1,4 +1,4 @@
-package com.zk.statusbar.statusbardemo.utils;
+package com.zk.statusbar.bartool;
 
 import android.annotation.TargetApi;
 import android.app.Activity;
